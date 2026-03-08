@@ -223,7 +223,8 @@ class StudentList extends Component {
                       placeholder="Filter Students"
                       onChange={this.filter}
                       aria-describedby="filtersearch"
-                      style={{ fontSize: '16px', padding: '10px', height: '40px', minWidth: '300px' }}
+                      maxLength="100"
+                      style={{ fontSize: '16px', padding: '10px', height: '40px', width: '100%' }}
                     />
                   </div>
                 </span>

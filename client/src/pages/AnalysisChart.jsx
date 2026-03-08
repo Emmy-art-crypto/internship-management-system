@@ -12,7 +12,7 @@ import {
   LineElement,
 } from 'chart.js';
 import { Bar, Doughnut, Line, Pie } from "react-chartjs-2";
-import { getAllInternshipStats } from "../store/actions";
+import { getAllInternshipStats, getFaculty } from "../store/actions";
 import { connect } from "react-redux";
 
 ChartJS.register(
@@ -286,14 +286,21 @@ class AnalyticsCharts extends Component {
   }
 
   async componentDidMount() {
-    const { getAllInternshipStats } = this.props;
+    const { getAllInternshipStats, getFaculty } = this.props;
     getAllInternshipStats().then(() => this.setData(this.props.chart));
+    // fetch faculty list for admin users so we can show count in the UI
+    if (getFaculty) getFaculty();
   }
 
   render() {
     return (
       <div className="container-fluid mt-2">
         <h4>Statistics</h4>
+              {this.props.faculties && this.props.faculties.length >= 0 && (
+                <div className="alert alert-info">
+                  Total faculty members: {this.props.faculties.length}
+                </div>
+              )}
         <hr />
         <nav>
           <div className="nav nav-tabs" id="nav-tab" role="tablist">
@@ -590,6 +597,7 @@ export default connect(
   (store) => ({
     auth: store.auth,
     chart: store.charts,
+    faculties: store.faculty, // faculty list for admin
   }),
-  { getAllInternshipStats }
+  { getAllInternshipStats, getFaculty }
 )(AnalyticsCharts);

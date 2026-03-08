@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Admin_Sidenav from "../components/Admin_Sidenav";
 import { connect } from "react-redux";
-import { createTeacher, removeSuccess } from "../store/actions";
+import { createTeacher, removeSuccess, getFaculty } from "../store/actions";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ErrorMessage from "../components/ErrorMessage";
@@ -35,7 +35,7 @@ class AddFaculty extends Component {
   }
   handleSubmit(event) {
     event.preventDefault();
-    const { createTeacher } = this.props;
+    const { createTeacher, getFaculty } = this.props;
     var formData = new FormData(event.target);
     const data = {};
     data["name"] = {
@@ -53,7 +53,12 @@ class AddFaculty extends Component {
     data["username"] = formData.get("username") || this.state.data.username;
     data["password"] = formData.get("password") || this.state.data.password;
     data["emailId"] = formData.get("emailId") || this.state.data.emailId;
-    createTeacher(data);
+    // create and then refresh faculty list so admin can immediately see new entry
+    createTeacher(data).then(() => {
+      // clean up form and ensure list cache is up to date
+      if (getFaculty) getFaculty();
+      event.target.reset();
+    });
   }
   render() {
     return (
@@ -233,5 +238,5 @@ export default connect(
     auth: store.auth,
     faculty: store.faculty,
   }),
-  { createTeacher, removeSuccess }
+  { createTeacher, removeSuccess, getFaculty }
 )(AddFaculty);

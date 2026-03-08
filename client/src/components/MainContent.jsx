@@ -141,6 +141,8 @@ class MainContent extends Component {
               placeholder="Filter Applications (By name, id, holder, ...)"
               onChange={this.filter}
               aria-describedby="filtersearch"
+              maxLength="100"
+              style={{ width: '100%', fontSize: '16px', padding: '10px', height: '40px' }}
             />
           </div>
           <hr />
