@@ -1,0 +1,367 @@
+/* Glassmorphism and Modern Login Form Styles */
+.glass-form {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
+  padding: 32px 24px;
+  margin: 0 auto;
+  max-width: 420px;
+  backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3b3b3b;
+  margin-bottom: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.form-card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(60, 60, 120, 0.08);
+  padding: 24px 18px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4f4f4f;
+  margin-bottom: 6px;
+}
+
+.input-field {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  background: #f3f4f6;
+  transition: border-color 0.2s;
+}
+
+.input-field:focus {
+  border-color: #6366f1;
+  outline: none;
+  background: #e0e7ff;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.btn-custom {
+  padding: 12px 28px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #6366f1 0%, #3b82f6 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(60, 60, 120, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-custom:hover {
+  background: linear-gradient(90deg, #3b82f6 0%, #6366f1 100%);
+  box-shadow: 0 4px 16px rgba(60, 60, 120, 0.12);
+}
+
+/* Beautiful Registration Form Styles */
+.beautiful-form {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
+  padding: 32px 24px;
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3b3b3b;
+  margin-bottom: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.form-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(60, 60, 120, 0.08);
+  padding: 24px 18px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4f4f4f;
+  margin-bottom: 6px;
+}
+
+.input-field {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  background: #f3f4f6;
+  transition: border-color 0.2s;
+}
+
+.input-field:focus {
+  border-color: #6366f1;
+  outline: none;
+  background: #e0e7ff;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.btn-custom {
+  padding: 12px 28px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #6366f1 0%, #3b82f6 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(60, 60, 120, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-custom:hover {
+  background: linear-gradient(90deg, #3b82f6 0%, #6366f1 100%);
+  box-shadow: 0 4px 16px rgba(60, 60, 120, 0.12);
+}
+
+.section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  background: url("../assets/images/bg4.jpg");
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section .container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  color: #333;
+  background-color: #424242;
+  transition-duration: 0.5s;
+  box-shadow: 5px 25px 50px#9e9e9e;
+}
+
+.section .container:hover {
+  box-shadow: 5px 25px 50px #616161;
+}
+
+.section .container .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #333;
+}
+
+.section .container .user .imgBx {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #212121;
+  transition: 0.5s;
+}
+
+.section .container .user .imgBx img {
+  top: 10%;
+  left: 10%;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.section .container .user .imgBx p {
+  margin-top: 28%;
+  font: 400 65px/1.3 "Times new roman", Helvetica, sans-serif;
+  color: #fff;
+  z-index: -1;
+  text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0, 0, 0, 0.15);
+  text-shadow: black 1px 1px, black 2px 2px, black 3px 3px, black 4px 4px,
+    black 5px 5px;
+}
+
+.section .container .user .formBx {
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #e7e7e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: 0.5s;
+}
+
+.section .container .user .formBx form h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.btn-custom,
+Link {
+  width: 100%;
+  padding: 13px;
+  background: #212121;
+  text-decoration: none;
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  margin: 8px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-radius: 8px;
+}
+
+.btn-custom:hover,
+Link:hover {
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: grey;
+}
+
+.section .container .user .formBx form input {
+  width: 100%;
+  padding: 10px;
+  background: #212121;
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  margin: 8px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.section .container .user .formBx form select {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background: #212121;
+  color: #777;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  margin: 8px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.section .container .user .formBx form input[type="submit"] {
+  max-width: 100px;
+  /* background: #677eff; */
+  background: #9e9e9e;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.section .container .user .formBx form input[type="submit"]:hover {
+  text-decoration: none;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+}
+
+.section .container .user .formBx form .signup {
+  position: relative;
+  margin-top: 8px;
+  margin-left: 110px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+  font-weight: 300;
+}
+
+.section .container .user .formBx form .signup a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #9e9e9e;
+}
+
+@media (max-width: 991px) {
+  .section .container {
+    max-width: 400px;
+  }
+
+  .section .container .imgBx {
+    display: none;
+  }
+
+  .section .container .user .formBx {
+    width: 100%;
+  }
+}
+
+pre {
+  background-color: lightgray;
+  border: 1px solid gray;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+table pre {
+  padding: 3px;
+  width: 80%;
+  margin: 0;
+}
