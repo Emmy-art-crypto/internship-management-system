@@ -1,0 +1,15 @@
+{
+  "name": "ims-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "cd server && npm install && npm run start",
+    "client": "cd client && npm install && npm run start",
+    "build": "cd client && npm install && npm run build",
+    "postinstall": "npm run build"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
